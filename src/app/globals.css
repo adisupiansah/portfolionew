@@ -3,25 +3,59 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --grey-color: #f8fafc;
+  --primary-color: #ff9130;
+  --blue-color: #6eacda;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--grey-color);
+  font-family: "Poppins", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* component header */
+.header .navbar {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
+.icon-github .icon {
+  color: var(--grey-color);
+  font-size: 28px;
+}
+
+/* component navbar */
+.navbar-gw {
+  margin-top: 3rem;
+}
+.navbar-gw .card-navbar {
+  position: relative;
+  /* background: rgba(255, 255, 255, 0.1); */
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Shadow lembut */
+  overflow: hidden; /* Supaya blur nggak keluar dari radius */
+}
+
+.navbar-gw .card-navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px); /* Blur hanya pada latar belakang */
+  z-index: -1; /* Supaya di belakang konten */
+}
+
+
+.card-navbar .card-body {
+  padding: 0 30px;
+}
+
