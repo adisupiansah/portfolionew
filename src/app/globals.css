@@ -21,41 +21,54 @@ body {
 }
 
 /* component header */
-.header .navbar {
+/* .header .navbar {
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 .icon-github .icon {
   color: var(--grey-color);
   font-size: 28px;
-}
+} */
 
 /* component navbar */
 .navbar-gw {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  position: sticky;
+  top: 20px;
+
 }
-.navbar-gw .card-navbar {
-  position: relative;
-  /* background: rgba(255, 255, 255, 0.1); */
+.navbar-gw .icon{
+  color: var(--grey-color);
+  font-size: 28px;
+}
+.navbar-gw .icon:hover {
+  color: var(--primary-color);
+  transition: ease-in 0.3s;
+}
+
+.card-navbar {
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(54, 52, 52, 0.1);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+  padding: 15px 25px;
   border-radius: 50px;
-  padding: 10px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Shadow lembut */
-  overflow: hidden; /* Supaya blur nggak keluar dari radius */
+  z-index: -1;
+}
+.card-body .nav-link{
+  color: var(--grey-color);
+  font-size: 17px
+}
+.card-body .nav-link:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  transition: ease-in 0.2s;
 }
 
-.navbar-gw .card-navbar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: inherit;
-  filter: blur(10px); /* Blur hanya pada latar belakang */
-  z-index: -1; /* Supaya di belakang konten */
-}
-
-
-.card-navbar .card-body {
-  padding: 0 30px;
+/* Navbar active */
+.nav-link.active-navbar {
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: ease-in-out 0.1s;
 }
 

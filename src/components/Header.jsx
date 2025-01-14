@@ -7,7 +7,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className="header">
-      <nav className="navbar p-3">
+      <nav className="navbar p-2">
         <div className="container">
           <a className="navbar-brand d-flex justify-content-center align-items-center" href="#">
             <Image

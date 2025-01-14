@@ -1,12 +1,9 @@
-import Header from '@/components/Header'
-import Navbar from '@/components/Navbar'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Header/>
-      <Navbar/>
+      <h1 className='d-flex justify-content-center align-items-center vh-100 text-blue-700 fs-2 fw-bold'>HELLO WORLD</h1>
     </div>
   )
 }
