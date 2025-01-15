@@ -30,12 +30,12 @@ body {
 } */
 
 /* component navbar */
-.navbar-gw {
+/* .navbar-gw {
   margin-top: 2rem;
   position: sticky;
-  top: 20px;
+  top: 32px;
 
-}
+} */
 .navbar-gw .icon{
   color: var(--grey-color);
   font-size: 28px;
@@ -72,3 +72,31 @@ body {
   transition: ease-in-out 0.1s;
 }
 
+/* component home */
+.home .img-home{
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 30px rgba(228, 121, 21, 0.6);
+}
+.home .txt-halo {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.home .txt-name{
+  margin-top: 10px;
+  font-size: 43px;
+  font-weight: 600;
+  color: var(--grey-color);
+}
+.home .txt-job{
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+.home .txt-desc{
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--grey-color);
+}
