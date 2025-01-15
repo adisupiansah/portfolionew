@@ -1,14 +1,14 @@
 import About from '@/components/About'
-import AboutSkils from '@/components/AboutSkils'
 import NavigasiAbout from '@/components/NavigasiAbout'
+import Tools from '@/components/Tools'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <About />
+      <About/>
       <NavigasiAbout/>
-      <AboutSkils/>
+      <Tools/>
     </div>
   )
 }

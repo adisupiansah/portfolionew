@@ -1,21 +1,36 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import foto from "/public/img/logo.jpeg";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="container">
         <div className="row d-flex justify-content-center align-items-center vh-100">
-          <div className="col-md-3">
+          <div className="col-md-4">
             <div className="">
                 <span className="txt-halo">Hallo Guys, I'm</span>
                 <h1 className="txt-name">Adi Supiansah</h1>
-                <h2 className="txt-job">Fullstack Developer</h2>
+                <h2 className="txt-job">
+                    <TypeAnimation
+                       sequence={[
+                        'Fullstack',
+                        500,
+                        'Fullstack Developer', //  Continuing previous Text
+                        500,
+                        '',
+                        500,
+                      ]}
+                    
+                      repeat={Infinity}
+                    />
+                </h2>
                 <span className="txt-desc">Welcome to My personal website</span>
             </div>
           </div>
-          <div className="col-md-3 ">
+          <div className="col-md-4 ">
             <div className="">
               <Image
                 src={foto}

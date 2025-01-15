@@ -6,7 +6,9 @@
   --background: #000000;
   --grey-color: #f8fafc;
   --primary-color: #ff9130;
+  --orange-color: #ff913036;
   --blue-color: #6eacda;
+  --dark-color: #212121;
 }
 * {
   margin: 0;
@@ -30,12 +32,11 @@ body {
 } */
 
 /* component navbar */
-/* .navbar-gw {
-  margin-top: 2rem;
-  position: sticky;
-  top: 32px;
+.navbar-gw {
+  margin-top: 1rem;
 
-} */
+
+}
 .navbar-gw .icon{
   color: var(--grey-color);
   font-size: 28px;
@@ -74,8 +75,10 @@ body {
 
 /* component home */
 .home .img-home{
-  border: 1px solid var(--primary-color);
-  box-shadow: 0 0 30px rgba(228, 121, 21, 0.6);
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 0 10px 5px rgba(255, 124, 2, 0.12),
+              0 0 20px 10px rgba(255, 124, 2, 0.1),
+              0 0 40px 20px rgba(255, 124, 2, 0.2);
 }
 .home .txt-halo {
   font-size: 25px;
@@ -93,10 +96,89 @@ body {
   font-size: 25px;
   font-weight: 500;
   color: var(--grey-color);
+  margin-bottom: 10px;
 }
 .home .txt-desc{
-  margin-top: 15px;
+
   font-size: 15px;
   font-weight: 400;
   color: var(--grey-color);
 }
+
+/* component about */
+.about{
+  margin-top: 8rem;
+}
+.about .card{
+  background-color: var(--dark-color);
+  color: var(--grey-color);
+  border-radius: 30px;
+}
+.card .title{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: flex
+  
+}
+.card .garis-title{
+  flex-shrink: 0;
+  height: 3px;
+  margin-top: 13px;
+  width: 300px;
+  background-color: var(--primary-color);
+  margin-left: 10px;
+}
+.text-about p {
+  text-align: justify;
+  font-size: 17px;
+}
+
+/* component About-skils */
+.title-skils{
+  font-size: 25px;
+  font-weight: 500;
+  display: flex
+}
+.garis-title-skils{
+  flex-shrink: 0;
+  height: 3px;
+  margin-top: 13px;
+  width: 100px;
+  background-color: var(--primary-color);
+  margin-right: 10px;
+}
+.about-skils .row{
+  margin-top: 2.5rem;
+}
+.about-skils .card{
+  background-color: var(--dark-color);
+  color: var(--grey-color);
+  border: 1px solid var(--grey-color);
+}
+.about-skils .card .card-body:hover{
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+/* component about-skils navigasi */
+.about-navigasi{
+  margin-top: 3rem;
+}
+.about-navigasi .navabout-link{
+  color: var(--grey-color);
+  font-size: 17px;
+}
+.about-navigasi .navabout-link:hover{
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: ease-in 0.2s;
+}
+.navabout-link.active-navigasiabout{
+  color: var(--primary-color);
+  background-color: var(--orange-color);
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+/* component about/tools */

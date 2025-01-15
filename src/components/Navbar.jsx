@@ -10,6 +10,9 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const Active = (url) => {
+    if (url === '/about') {
+      return pathname.startsWith("/about") ? "active-navbar" : "";
+    }
     return pathname === url ? "active-navbar" : "";
   };
 
@@ -18,7 +21,7 @@ const Navbar = () => {
       <div className="container">
         <div className="row">
           <div className="d-flex justify-content-center align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-8">
               <div className="card-navbar">
                 <div className="card-body d-flex justify-content-between align-items-center">
                   <Image
