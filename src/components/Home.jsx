@@ -11,14 +11,14 @@ const Home = () => {
         <div className="row d-flex justify-content-center align-items-center vh-100">
           <div className="col-md-4">
             <div className="">
-                <span className="txt-halo">Hallo Guys, I'm</span>
+                <span className="txt-halo">Hallo Guys, Im</span>
                 <h1 className="txt-name">Adi Supiansah</h1>
                 <h2 className="txt-job">
                     <TypeAnimation
                        sequence={[
-                        'Fullstack',
+                        "Fullstack",
                         500,
-                        'Fullstack Developer', //  Continuing previous Text
+                        "Fullstack Developer",
                         500,
                         '',
                         500,

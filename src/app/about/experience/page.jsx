@@ -1,14 +1,14 @@
 import About from '@/components/About'
-import Experience from '@/components/Experience'
 import NavigasiAbout from '@/components/NavigasiAbout'
+import Experience from '@/components/Experience'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        <About/>
-        <NavigasiAbout/>
-        <Experience/>
+      <About/>
+      <NavigasiAbout/>
+      <Experience/>
     </div>
   )
 }

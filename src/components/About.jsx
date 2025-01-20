@@ -10,7 +10,7 @@ const About = () => {
           <div className="col-md-8">
             <div className="card">
               <div className="card-body">
-                <h3 className="title container">About <span className='garis-title'></span></h3>
+                <h3 className="title container">About Me</h3>
                 <div className="row ">
                   <div className="col-md-6">
                     <div className="img-profile d-flex justify-content-center align-items-center">

@@ -135,6 +135,9 @@ body {
 }
 
 /* component About-skils */
+.about-skils{
+  margin-bottom: 3rem;
+}
 .title-skils{
   font-size: 25px;
   font-weight: 500;
@@ -149,18 +152,22 @@ body {
   margin-right: 10px;
 }
 .about-skils .row{
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 .about-skils .card{
   background-color: var(--dark-color);
   color: var(--grey-color);
   border: 1px solid var(--grey-color);
+  margin-top: 1rem;
 }
 .about-skils .card .card-body:hover{
   background-color: var(--primary-color);
   color: var(--dark-color);
   transition: ease-in 0.3s;
   cursor: pointer;
+  transform: scale(1.10);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
 }
 /* component about-skils navigasi */
 .about-navigasi{
@@ -182,3 +189,81 @@ body {
   border-radius: 5px;
 }
 /* component about/tools */
+.tools {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.title-tools{
+  font-size: 25px;
+  font-weight: 500;
+  display: flex
+}
+.garis-title-tools{
+  flex-shrink: 0;
+  height: 3px;
+  margin-top: 13px;
+  width: 100px;
+  background-color: var(--primary-color);
+  margin-right: 10px;
+}
+.tools .row{
+  margin-top: 2rem;
+}
+.tools .card {
+  background-color: var(--dark-color);
+  color: var(--grey-color);
+  border: 1px solid var(--grey-color);
+  margin-top: 1rem;
+}
+
+/* component project */
+.project{
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+.project .card{
+  background-color: var(--dark-color);
+  color: var(--grey-color);
+  margin-top: 2rem;
+}
+.project .title{
+  margin-top: 2rem;
+
+}
+.project .title h2{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* components contact */
+.contact{
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+.contact .form-contact{
+  margin-top: 2rem;
+}
+.form-contact h2{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.form-contact .form-control{
+  background-color: var(--dark-color);
+  color: var(--grey-color);
+  padding: 10px;
+}
+.form-contact .form-control::placeholder{
+  color: var(--grey-color);
+}
+.form-contact .btn{
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  font-weight: 600;
+}
+.form-contact .btn:hover{
+  background-color: var(--background);
+  color: var(--grey-color);
+  transition: ease-in 0.2s;
+  border: 1px solid var(--primary-color);
+}
