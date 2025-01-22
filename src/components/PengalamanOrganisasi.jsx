@@ -6,7 +6,7 @@ const PengalamanOrganisasi = ({ organisasi }) => {
     <div className="tools">
       <div className="container">
         <div className="row d-flex justify-content-center align-items-center">
-          <h3 className="col-md-8">
+          <h3 className="col-md-12">
             <div className="title-tools">
               <span className="garis-title-tools"></span> Organization
               Experience
@@ -15,7 +15,7 @@ const PengalamanOrganisasi = ({ organisasi }) => {
               <div className="col-md-12">
                 {organisasi.map((data, index) => (
                   <div className="card mb-3" key={index}>
-                    <div className="d-flex">
+                    <div className="d-flex flex-column flex-md-row">
                       <div className="col-md-4">
                         <Image
                           src={data.img}
@@ -25,12 +25,12 @@ const PengalamanOrganisasi = ({ organisasi }) => {
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title">Nama Organisasi: {data.nama}</h5>
+                          <h5 className="card-title">Organization name: {data.nama}</h5>
                           <p className="card-text mt-3">
-                            Jabatan: {data.deskripsi}
+                            Position: {data.deskripsi}
                           </p>
                           <p className="card-text mt-3">
-                            Tahun: {data.tahun}
+                            Year: {data.tahun}
                           </p>
                         </div>
                       </div>

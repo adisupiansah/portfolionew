@@ -21,14 +21,14 @@ const Navbar = () => {
       <div className="container">
         <div className="row">
           <div className="d-flex justify-content-center align-items-center">
-            <div className="col-md-8">
+            <div className="col-md-8 col-12">
               <div className="card-navbar">
                 <div className="card-body d-flex justify-content-between align-items-center">
                   <Image
                     src={logoAdi}
                     width={40}
                     height={40}
-                    className="rounded-circle"
+                    className="rounded-circle img-logo-navbar"
                     alt="adi supiansah"
                   />
 

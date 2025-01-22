@@ -87,7 +87,7 @@ const AboutSkils = () => {
     <div className="about-skils">
       <div className="container">
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-md-8">
+          <div className="col-md-12">
             <h3 className="title-skils">
               <span className="garis-title-skils"></span>Skils
             </h3>

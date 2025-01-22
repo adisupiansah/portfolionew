@@ -11,14 +11,15 @@ import webportfolio from "/public/img/webportfolio.png";
 import ChartGW from "./Chart";
 import Link from "next/link";
 import { LuExternalLink } from "react-icons/lu";
+import 'animate.css'
 
 const Project = () => {
   const dataProject = [
     {
       id: 1,
-      nama: "SIBALOG (SISTEM INFORMASI BAGIAN LOGISTIK)",
+      nama: "SIBALOG",
       deskripsi:
-        "SIBALOG adalah sistem informasi yang digunakan untuk mengelola data-data yang ada di bagian logistik Polres Karimun.",
+        "SIBALOG is an information system designed to manage logistics data efficiently in the Karimun Police logistics section.",
       commit: "5 December 2024",
       link: "https://sibalog.my.id",
       img: sibalog,
@@ -27,8 +28,8 @@ const Project = () => {
       id: 2,
       nama: "DISPOSISI BAGLOG",
       deskripsi:
-        "Ini adalah aplikasi versi terlama sebelum ada aplikasi SIBALOG.",
-      commit: "13 Juni 2023",
+        "This application is an initial version before the presence of the SIBALOG application.",
+      commit: "13 June 2023",
       link: "https://disposisibaglog.kesug.com/login.php",
       img: disposisi,
     },
@@ -36,16 +37,16 @@ const Project = () => {
       id: 3,
       nama: "NOTADINAS BAGLOG",
       deskripsi:
-        "Ini adalah aplikasi versi terlama sebelum ada aplikasi SIBALOG.",
-      commit: "13 Juni 2023",
+        "This application is an initial version before the presence of the SIBALOG application.",
+      commit: "13 June 2023",
       link: "https://notadinaskeluarbaglog.great-site.net/",
       img: notadinas,
     },
     {
       id: 4,
-      nama: "CARD ULTAH",
-      deskripsi: "Card Ultah pesanan dari client.",
-      commit: "8 Januari 2025",
+      nama: "CARD BIRTHDAY",
+      deskripsi: "Birthday cards made to order from clients.",
+      commit: "8 January 2025",
       link: "https://muhammadmuammar.vercel.app/",
       img: cardultah,
     },
@@ -53,15 +54,16 @@ const Project = () => {
       id: 5,
       nama: "FRONTEND WEB E-COOMERCE",
       deskripsi:
-        "Aplikasi ini hanya Front-end tidak menyediakan back-end karna aplikasi ini sesuai dengan permintaan client.",
-      commit: "25 Maret 2024",
+        "This application only includes Front-end without Back-end, according to client request.",
+      commit: "25 March 2024",
       link: "https://ecomercce-api-store.vercel.app/",
       img: frontendEcommerce,
     },
     {
       id: 6,
       nama: "FRONTEND WEB RATING FILM",
-      deskripsi: "Aplikasi rating film dengan menggunakan API dari TMDB.",
+      deskripsi:
+        "A film rating application that utilizes the API from TMDB to display film data interactively.",
       commit: "19 April 2024",
       link: "https://atm-movies.vercel.app/",
       img: frontendRatingfilm,
@@ -69,7 +71,8 @@ const Project = () => {
     {
       id: 7,
       nama: "PORTFOLIO",
-      deskripsi: "Aplikasi Portfolio berbasis web",
+      deskripsi:
+        "Web-based portfolio application to display work and experience professionally.",
       commit: "2 February 2024",
       link: "https://adisupiansah.my.id/",
       img: webportfolio,
@@ -94,36 +97,39 @@ const Project = () => {
           <div className="col-md-8">
             <div className="row">
               <div className="col-md-12">
-                <div className="title text-center">
+                <div className="title text-center animate__animated animate__fadeInDown animate__fast">
                   <h2>Past Project Experience</h2>
-                  <span>Explore the projects I've worked on so far</span>
+                  <span>Explore the projects Ive worked on so far</span>
                 </div>
-                <div className="card p-2">
+                <div className="card p-2 animate__animated animate__fadeInLeft animate__fast">
                   <ChartGW dataProject={dataProject} />
                 </div>
               </div>
               {dataProject.map((data, index) => (
                 <div className="col-md-6" key={index}>
-                  <div className="card">
+                  <div className="card animate__animated animate__zoomIn animate__fast">
                     <div className="card-body">
                       <Image
                         src={data.img}
                         alt="webportfolio"
                         className="card-img-top"
                       />
-                      <h3 className="title-project mt-3">{data.nama}</h3>
+                      <h3 className="title-project mt-3 text-center fw-bold mb-3">{data.nama}</h3>
                       <p>
                         {showText[data.id]
                           ? data.deskripsi
                           : data.deskripsi.split(" ").slice(0, 3).join(" ") +
                             "..."}{" "}
-                        <span className='text-blue-500 cursor-pointer' onClick={() => toggleReadMore(data.id)}>
+                        <span
+                          className="text-blue-500 cursor-pointer"
+                          onClick={() => toggleReadMore(data.id)}
+                        >
                           {showText[data.id] ? "Show Less" : "read more"}
                         </span>
                       </p>
                       <p>{data.commit}</p>
-                      <Link href={data.link} target="_blank" className="flex">
-                        view project <LuExternalLink className="icon" />
+                      <Link href={data.link} target="_blank" className="flex text-blue-500">
+                        view project <LuExternalLink className="icon mt-1 mx-1" />
                       </Link>
                     </div>
                   </div>

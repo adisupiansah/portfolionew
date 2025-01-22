@@ -8,7 +8,7 @@ const page = () => {
     <div>
       <About />
       <NavigasiAbout/>
-      <AboutSkils/>
+    
     </div>
   )
 }
