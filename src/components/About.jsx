@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import profile from "/public/img/adi.jpg";
+import profile from "/public/img/adi3.jpg";
 import Link from "next/link";
 import 'animate.css';
 

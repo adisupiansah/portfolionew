@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import React from "react";
-import foto from "/public/img/adi.jpg";
+import foto from "/public/img/adi4.jpg";
 import { TypeAnimation } from "react-type-animation";
 import 'animate.css';
 

@@ -38,7 +38,7 @@ const Experience = () => {
     {
       id: 1,
       nama: "Karimun University Informatics Engineering Student Association",
-      deskripsi: "Secretary of HMTIF Karimun University",
+      deskripsi: "Public Relations of HMTIF Karimun University",
       tahun: "2021 - 2022",
       img: hmtif,
     },
