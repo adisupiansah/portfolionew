@@ -8,6 +8,7 @@ import cardultah from "/public/img/card-ultah.png";
 import frontendEcommerce from "/public/img/e-commerce.png";
 import frontendRatingfilm from "/public/img/webrating-film.png";
 import webportfolio from "/public/img/webportfolio.png";
+import quransaya from "/public/img/quransaya.png";
 import ChartGW from "./Chart";
 import Link from "next/link";
 import { LuExternalLink } from "react-icons/lu";
@@ -76,6 +77,15 @@ const Project = () => {
       commit: "2 February 2024",
       link: "https://adisupiansah.my.id/",
       img: webportfolio,
+    },
+    {
+      id: 8,
+      nama: "QURANSAYA",
+      deskripsi:
+        "This application is designed to make it easier for users to read and understand the Al-Quran digitally. With features such as surah reading, translation information, and audio, this application aims to be read anywhere and at any time",
+      commit: "29 January 2025",
+      link: "https://quransayame.vercel.app/",
+      img: quransaya,
     },
   ];
 

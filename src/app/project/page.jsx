@@ -1,12 +1,12 @@
-import Project from '@/components/Project'
-import React from 'react'
+import IndexProject from "@/components/Project/IndexProject";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-        <Project/>
+      <IndexProject />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

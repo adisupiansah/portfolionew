@@ -1,10 +1,10 @@
-import Home from '@/components/Home'
+import IndexHome from '@/components/Home/IndexHome'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Home/>
+      <IndexHome/>
     </div>
   )
 }
