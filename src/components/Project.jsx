@@ -9,6 +9,7 @@ import frontendEcommerce from "/public/img/e-commerce.png";
 import frontendRatingfilm from "/public/img/webrating-film.png";
 import webportfolio from "/public/img/webportfolio.png";
 import quransaya from "/public/img/quransaya.png";
+import wallpaperhd from "/public/img/wallpaperhd.png";
 import ChartGW from "./Chart";
 import Link from "next/link";
 import { LuExternalLink } from "react-icons/lu";
@@ -87,6 +88,14 @@ const Project = () => {
       link: "https://quransayame.vercel.app/",
       img: quransaya,
     },
+    {
+      id: 9,
+      nama: "WALLPAPER HD",
+      deskripsi: "This application was developed based on requests from clients as part of the Final Semester Examination (UAS) assignment for creating web-based applications. The data used in this application was obtained via the web scraping method, where the data was taken from the Wallpaperflare.com platform.",
+      commit: "2 February 2025",
+      link: "https://wallpaperhd.vercel.app",
+      img: wallpaperhd
+    }
   ];
 
   const [showText, setShowText] = useState({});
